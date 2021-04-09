@@ -35,6 +35,21 @@ public class Main {
                 "allen.macceny@mit.us",
                 "(087) 123-4567");
 
+        // Create a new class VIPCustomer
+        // it should have 3 fields name, credit limit, and email address.
+        // create 3 constructors
+        // 1st constructor empty should call the constructor with 3 parameters with default values
+        // 2nd constructor should pass on the 2 values it receives and add a default value fro the 3rd
+        // 3rd constructor should save all fields.
+        // create getters only for this using code generation of intelliJ as setters wont be needed
+        // test and confirm it works
 
+        Account timAccount = new Account(
+                "Tim",
+                "tim@email.com",
+                "123456");
+        System.out.println(timAccount.getNumber() + " name " + timAccount.getCustomerName());
+        System.out.println("Current balance is " + timAccount.getBalance());
+        timAccount.withdrawal(100.55);
     }
 }
